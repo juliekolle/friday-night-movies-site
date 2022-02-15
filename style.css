@@ -1,13 +1,17 @@
-:root {
-  --bg-color: #091d12;
-  --link-color: #fbe353;
-  --link-hover-color: #f4eef2;
-  --color-4: #d5b8c7;
-  --color-5: #95a7cd;
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Annie+Use+Your+Telescope&family=DM+Sans&family=Tangerine&display=swap'); /*primary font*/
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");/*secondary font*/
 
-  --primary-font: "Cabin", sans-serif;
+
+:root {
+  --bg-color: #212347;
+  --button-color: #53b4bf;
+  --button-hover-color: #f4eef2;
+  --color-accent: #d9c6b9;
+  --color-2-accent: #0f5f71;
+
+  --primary-font: "DM sans",  sans-serif;
   --secondary-font: "Zen Kaku Gothic Antique", serif;
-  --main-text-color: #000;
+  --main-text-color: #f4eef2;
 
   --white-space: 1rem;
 }
