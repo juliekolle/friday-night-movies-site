@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #091d12;
+  --link-color: #fbe353;
+  --link-hover-color: #f4eef2;
+  --color-4: #d5b8c7;
+  --color-5: #95a7cd;
+
+  --primary-font: "Cabin", sans-serif;
+  --secondary-font: "Zen Kaku Gothic Antique", serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
