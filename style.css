@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Annie+Use+Your+Telescope&family=DM+Sans&family=Tangerine&display=swap'); /*primary font*/
-@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");/*secondary font*/
-
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Annie+Use+Your+Telescope&family=DM+Sans&family=Tangerine&display=swap"); /*primary font*/
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"); /*secondary font*/
 
 :root {
   --bg-color: #212347;
@@ -9,9 +8,20 @@
   --color-accent: #d9c6b9;
   --color-2-accent: #0f5f71;
 
-  --primary-font: "DM sans",  sans-serif;
+  --primary-font: "DM sans", sans-serif;
   --secondary-font: "Zen Kaku Gothic Antique", serif;
   --main-text-color: #f4eef2;
 
   --white-space: 1rem;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#background {
+  /*background-image: url(./popcorn.svg);*/
+  position: absolute;
+  max-width: 50%;
+  opacity: 50%;
 }
