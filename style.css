@@ -25,3 +25,73 @@ body {
   max-width: 50%;
   opacity: 50%;
 }
+
+ #ProductPageBody{
+  background-color: var(--bg-color);
+  grid-template-rows: 3;
+  display: grid;
+  /* grid-template-columns: 2;
+  grid-template-rows: 3;
+  display: grid;*/
+}
+
+#ProductPageHeading{
+  /*grid-column-start: 1;
+  grid-column-end: 3;*/
+  grid-row-start: 2;
+  grid: 3;
+}
+
+#ProductPageText{
+  /*grid-column-start: 3;
+  grid-column-end: 4;*/
+} 
+
+#MoviePoster {
+  /*background-image: url(./popcorn.svg);*/
+  position: relative;
+  max-width: 100%;
+}
+
+@media (min-width: 900px){
+
+  #grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    display: grid;
+
+  }
+
+  #ProductPageBody{
+    background-color: var(--bg-color);
+    grid-template-rows: 3;
+    display: grid;
+  }
+
+  #ProductPageHeading{
+    grid-row-start: 2;
+    grid: 3;
+  }
+
+  #ProductPageText{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  } 
+
+  #MoviePoster {
+    /*background-image: url(./popcorn.svg);*/
+    position: relative;
+    max-width: 50%;
+  }
+  
+
+
+
+
+
+
+
+
+
+  
+}
