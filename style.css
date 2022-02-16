@@ -163,6 +163,7 @@ hr {
 #ProductPageText {
   /*grid-column-start: 3;
   grid-column-end: 4;*/
+  text-decoration: none;
 }
 
 #MoviePoster {
@@ -201,55 +202,59 @@ hr {
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.title{
+.title {
   text-align: center;
   font-weight: 600;
   margin-top: 1rem;
 }
 
-.title a{
+.title a {
   color: var(--main-text-color);
   font-family: var(--primary-font);
 }
 
-h2{
+h2 {
   color: var(--main-text-color);
   font-family: var(--primary-font);
   text-align: center;
 }
 
-.category{
+.category {
   align-self: center;
   display: grid;
 }
 
-.category img{
+.category img {
   max-width: 8cm;
   margin: auto;
 }
 
-.category a{
+.category a {
   color: #f4eef2;
   font-family: var(--secondary-font);
   margin-top: 3rem;
   text-align: center;
-  
 }
 
-.movie1, .movie2, .movie3, .movie4, .movie5, .movie6 a{
+.movie1,
+.movie2,
+.movie3,
+.movie4,
+.movie5,
+.movie6 a {
   margin-top: 3rem;
   text-align: center;
 }
 
-.category a:hover{
+.category a:hover {
   color: var(--button-color);
 }
 
-footer{
+footer {
   color: #f4eef2;
   font-family: var(--secondary-font);
   opacity: 90%;
@@ -257,18 +262,17 @@ footer{
 }
 
 @media (min-width: 900px) {
-  
-  .category{
+  .category {
     grid-template: auto auto auto / auto auto auto;
     margin: auto;
     align-items: center;
-    margin-left: 5rem; 
+    margin-left: 5rem;
     text-align: center;
   }
 
-  .category a{
-  display: grid;
-  grid-row: inherit;
-  margin-bottom: 3rem;
+  .category a {
+    display: grid;
+    grid-row: inherit;
+    margin-bottom: 3rem;
   }
 }
