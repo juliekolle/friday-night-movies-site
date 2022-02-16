@@ -18,6 +18,24 @@ body {
   margin: 0%;
 }
 
+p,
+h1,
+h2,
+h3 {
+  color: var(--main-text-color);
+}
+
+p,
+button {
+  font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font);
+}
+
 header {
   display: flex;
   justify-content: center;
