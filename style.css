@@ -57,6 +57,10 @@ h2{
   margin: auto;
 }
 
+.category img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .category a{
   color: #f4eef2;
   font-family: var(--secondary-font);
@@ -70,7 +74,9 @@ h2{
   text-align: center;
 }
 
-.category a:hover{
+/* this is the hover color we agreed on for the text but on the product list 
+it might be a little too dark for the movie titles*/
+a:hover{
   color: var(--button-color);
 }
 
