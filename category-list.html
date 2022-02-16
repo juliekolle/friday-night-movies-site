@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="title">
-     <a href="index.html">Fun Friday Films</a>
-    </div>
-    <h2>Drama</h2>
-    <div class="category">
-        <div class="movie1">
-         <img src="LadyBird.svg" alt="movies"><a href="product-page.html">Lady bird</a></div>
-         <div class="movie2">
-        <img src="Parasite.svg" alt="movies"><a href="product-page.html">Parasite</a></div>
-        <div class="movie3">
-         <img src="Moonlight.svg" alt="movies"><a href="product-page.html">Moonlight</a></div>
-        <div class="movie4">
-         <img src="GroundhogDay.svg" alt="movies"><a href="product-page.html">Groundhog day</a></div>
-        <div class="movie5">
-         <img src="KingRichard.svg" alt="movies"><a href="product-page.html">King Richard</a></div>
-        <div class="movie6">
-         <img src="ShawshankRedemption.svg" alt="movies"><a href="product-page.html">Shawshank redemption</a>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a href="index.html">Fun Friday Films</a>
+      </div>
+    </header>
+    <main>
+      <h2>Drama</h2>
+      <div class="category">
+        <template id="movieTemplate">
+          <article>
+            <div class="movie1">
+              <img src="LadyBird.svg" alt="movies" /><a
+                class="movieTitle"
+                href="product-page.html"
+                >Lady bird</a
+              >
+            </div>
+          </article>
+        </template>
+        <!-- <div class="movie2">
+          <img src="Parasite.svg" alt="movies" /><a href="product-page.html"
+            >Parasite</a
+          >
         </div>
-    </div>
+        <div class="movie3">
+          <img src="Moonlight.svg" alt="movies" /><a href="product-page.html"
+            >Moonlight</a
+          >
+        </div>
+        <div class="movie4">
+          <img src="GroundhogDay.svg" alt="movies" /><a href="product-page.html"
+            >Groundhog day</a
+          >
+        </div>
+        <div class="movie5">
+          <img src="KingRichard.svg" alt="movies" /><a href="product-page.html"
+            >King Richard</a
+          >
+        </div>
+        <div class="movie6">
+          <img src="ShawshankRedemption.svg" alt="movies" /><a
+            href="product-page.html"
+            >Shawshank redemption</a
+          >
+        </div> -->
+      </div>
+    </main>
     <footer>
-        <p>This website was made for a school assignment - MMD INT, 2nd semester</p>
+      <p>
+        This website was made for a school assignment - MMD INT, 2nd semester
+      </p>
     </footer>
-</body>
+    <script src="scriptCategoryList.js"></script>
+  </body>
 </html>
