@@ -26,6 +26,15 @@ fetch(url, options)
 });
 
 
+{/* <article>
+            <div class="movie1">
+              <img src="LadyBird.svg" alt="movies" /><a
+                class="movieTitle"
+                href="product-page.html"
+                >Lady bird</a
+              >
+            </div>
+          </article> */}
 
 function handleCategoryList(data){
 //console.log(data);
@@ -39,23 +48,11 @@ const template = document.querySelector("#movieTemplate").content;
 //clone it
 const copy = template.cloneNode(true);
 //change content
-
+copy.querySelector(".movieTitle").textContent = `${movie.Title}`
+copy.querySelector("img").src = `./${movie.image}`
 //grab parent
 const parent = document.querySelector(".category");
 //append
 parent.appendChild(copy);
 
 }
-
-/*
-function showMovie(product){
-    console.log(movie);
-//grab the template
-const template = document.querySelector("#movieTemplate").content;
-
-//clone it
-const copy = template.cloneNode(true);
-
-//change content
-copy.querySelector(".movieTitle").textContent = movie.Title;
-}*/
