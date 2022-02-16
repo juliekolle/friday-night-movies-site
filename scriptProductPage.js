@@ -27,8 +27,18 @@ fetch(url, options)
 
 function handleData(movie) {
     console.log(movie);
-    document.querySelector("h3").textContent = movie.Title
-    document.querySelector("p").textContent = movie.Mood
+    document.querySelector("h3").textContent = movie.Title;
+    document.querySelector("p").textContent = movie.Mood;
+    document.querySelector(".genre").textContent = movie.Genre;
+    document.querySelector(".director").textContent = movie.Directors;
+    document.querySelector(".actors").textContent = movie.Actors;
+    document.querySelector(".streamingPlatform").textContent = movie.StreamingPlatforms;
+    document.querySelector(".length").textContent = movie.Length;
+    document.querySelector(".description").textContent = movie.Description;
+//console.log(`https://secondsemester-aa76.restdb.io/media/${movie.Image[0]}`)
+    document.querySelector("img.moviePoster").src=`./${movie.image}`;
+document.querySelector("img.moviePoster").alt=movie.Title;
+
 //     /* //movies.forEach(title => {
 //         console.log(title);
 //         /*1.make a template
