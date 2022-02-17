@@ -1,5 +1,10 @@
 //alert("hello")
+// const urlParams = new URLSearchParams(window.location.search);
+// const id = urlParams.get("_id");
 
+
+// const url = "https://secondsemester-aa76.restdb.io/rest/friday-night-movie/" + id;
+// console.log(url);
 const url = "https://secondsemester-aa76.restdb.io/rest/friday-night-movie/620a5884f701f4600009f6d4";
 
 const options = {
