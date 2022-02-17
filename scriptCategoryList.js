@@ -1,7 +1,7 @@
 //alert("hello")
-
-const url = "https://secondsemester-aa76.restdb.io/rest/friday-night-movie";
-
+const genre = "Drama"
+const url = `https://secondsemester-aa76.restdb.io/rest/friday-night-movie?q={"Genre": "${genre}"}`;
+console.log(url)
 const options = {
     headers: {
         "x-apikey": "620bbbb434fd6215658585ff",
