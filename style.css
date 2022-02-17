@@ -155,7 +155,7 @@ hr {
 /*IPAD PRO & DESKTOP VIEW*/
 @media (min-width: 900px) {
   .backgroundImage {
-    max-width: 70%;
+    max-width: 80%;
     opacity: 100%;
   }
 
