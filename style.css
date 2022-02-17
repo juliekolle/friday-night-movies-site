@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aladin&family=Annie+Use+Your+Telescope&family=DM+Sans&family=Tangerine&display=swap"); /*primary font*/
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"); /*secondary font*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
 :root {
   --bg-color: #212347;
@@ -16,6 +17,12 @@
 body {
   background-color: var(--bg-color);
   margin: 0%;
+}
+
+header h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 4vw;
+  color: var(--main-text-color);
 }
 
 p,
@@ -45,13 +52,30 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:link {
   color: var(--main-text-color);
 }
 
+a:visited {
+  color: var(--main-text-color);
+}
+
+a:hover {
+  color: var(--button-color);
+}
+
 .backgroundImage {
-  max-width: 100%;
-  opacity: 60%;
+  max-width: 30%;
+  opacity: 100%;
+}
+
+.smallProduct .backgroundImage {
+  max-width: 55%;
+  opacity: 100%;
+}
+
+.recommendationsScrollbar:hover {
+  scale: (2);
 }
 
 .frontPageCategoryMenu {
@@ -71,12 +95,24 @@ a:hover {
 }
 
 hr {
-  border-color: var(--color-accent);
+  border-color: var(--button-color);
 }
 
-.recommendations {
+/* #smallPoster {
+  max-width: 100px;
+  height: 100px;
   display: flex;
   overflow-x: auto;
+} */
+
+/* .recommendations {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+.recommendationsScrollbar {
+  max-width: 30%;
 }
 
 .recommendations img {
@@ -94,11 +130,33 @@ hr {
   );
 }
 
+.frontPageCategoryMenu a {
+  background-color: var(--button-color);
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+  font-family: var(--secondary-font);
+}
+
+.frontPageCategoryMenu a:hover {
+  background-color: var(--button-hover-color);
+  color: var(--button-color);
+}
+
 /*IPAD PRO & DESKTOP VIEW*/
 @media (min-width: 900px) {
   .backgroundImage {
-    max-width: 50%;
-    opacity: 60%;
+    max-width: 70%;
+    opacity: 100%;
   }
 
   .frontPageCategoryMenu {
@@ -118,13 +176,15 @@ hr {
     align-items: center;
   }
 
-  hr {
-    border-color: var(--color-accent);
-  }
-
   .recommendations {
     display: flex;
     overflow-x: auto;
+  }
+
+  .appendHere {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .recommendations img {
@@ -142,6 +202,11 @@ hr {
       #212347 100%
     );
   }
+}
+
+.recommendationSection h3 {
+  padding-top: 4rem;
+  padding-left: 2rem;
 }
 
 #ProductPageBody {
