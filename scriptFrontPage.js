@@ -61,25 +61,31 @@ function showGenres(data){
 
 function handleGenres(genre){
     console.log(genre);
-    const template = document.querySelector("#genreList").textContent;
+    const template = document.querySelector("#genreList").content;
+    console.log(template);
     const copy = template.cloneNode(true);
-    copy.querySelector("a").textContent = `./${movie.Genre}`;
-    const parent = document.querySelector("#frontPageCategoryMenu");
+
+    const aEl = copy.querySelector("a");
+    aEl.textContent = genre;
+    aEl.href += genre;
+    
+    //copy.querySelector("a").textContent = `./${movie.Genre}`;
+    const parent = document.querySelector(".frontPageCategoryMenu");
     parent.appendChild(copy);
 }
 
 
-function showMovie(movie){
-    console.log(movie);
-//grab the template
-const template = document.querySelector("#smallPoster").content;
-//clone it
-const copy = template.cloneNode(true);
-//change content
-//copy.querySelector(".movieTitle").textContent = `${movie.Title}`
-copy.querySelector("img").src = `./${movie.image}`
-//grab parent
-const parent = document.querySelector(".appendHere");
-//append
-parent.appendChild(copy);
-}
+// function showMovie(movie){
+//     console.log(movie);
+// //grab the template
+// const template = document.querySelector("#smallPoster").content;
+// //clone it
+// const copy = template.cloneNode(true);
+// //change content
+// //copy.querySelector(".movieTitle").textContent = `${movie.Title}`
+// copy.querySelector("img").src = `./${movie.image}`
+// //grab parent
+// const parent = document.querySelector(".appendHere");
+// //append
+// parent.appendChild(copy);
+// }

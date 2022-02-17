@@ -1,6 +1,12 @@
 //alert("hello")
-const genre = "Drama"
-const url = `https://secondsemester-aa76.restdb.io/rest/friday-night-movie?q={"Genre": "${genre}"}`;
+const urlParams = new URLSearchParams(window.location.search);
+const Genre = urlParams.get("genre");
+
+const url = "https://secondsemester-aa76.restdb.io/rest/friday-night-movie?filter=" + `${Genre}`;
+
+//const genre = "Drama";
+//const genre = `${genre}`;
+//const url = `https://secondsemester-aa76.restdb.io/rest/friday-night-movie?q={"Genre": "${genre}"}`;
 console.log(url)
 const options = {
     headers: {
