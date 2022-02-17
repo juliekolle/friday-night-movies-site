@@ -24,9 +24,6 @@ fetch(url, options)
     console.error("An error occured:", e.message);
 });
 
-
-
-
 function showRecommendations(data){
     //console.log(data);
     //data.forEach(showMovie);
